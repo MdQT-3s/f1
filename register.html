@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/web/css/style.css" />
+    <link rel="stylesheet" href="/web/css/style_reg_auth.css" />
+    <title>F1 - Регистрация</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="profile.html">
+        <img src="img/logoF1.png" alt="Логотип Формулы 1" class="logo" />
+      </a>
+
+      <input type="checkbox" id="burger__toggle" class="burger__checkbox" />
+      <label for="burger__toggle" class="burger__menu">
+        <img src="img/burger.png" alt="Меню" class="burger__icon" />
+      </label>
+
+      <ul class="menu__nav">
+        <li><a href="index.html" class="menu__button">Главная</a></li>
+        <li><a href="results.html" class="menu__button">Результаты</a></li>
+        <li><a href="teams.html" class="menu__button">Команды</a></li>
+        <li><a href="about.html" class="menu__button">О нас</a></li>
+        <li><a href="auth.html" class="menu__button">Войти</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <img
+        src="/web/img/back_reg_auth.png"
+        alt="background"
+        class="background_auth_reg"
+      />
+      <form action="reg_auth.php" method="post">
+        <section class="login-section">
+          <div class="login-container">
+            <div class="login-form">
+              <h2 class="login-title">Регистрация</h2>
+              
+              <div class="input-group">
+                <label for="username" class="input-label">Логин</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  class="login-input"
+                  placeholder="Введите ваш логин"
+                  maxlength="20"
+                  minlength="5"
+                  required
+                />
+                <!-- Блок для ошибок будет добавлен JS -->
+              </div>
+
+              <div class="input-group">
+                <label for="email" class="input-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="login-input"
+                  placeholder="Введите ваш email"
+                  required
+                />
+                <!-- Блок для ошибок будет добавлен JS -->
+              </div>
+              
+              <div class="input-group">
+                <label for="password" class="input-label">Пароль</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="login-input"
+                  placeholder="Введите ваш пароль"
+                  maxlength="20"
+                  minlength="5"
+                  required
+                />
+                <!-- Блок для ошибок будет добавлен JS -->
+              </div>
+              
+              <div class="input-group">
+                <label for="confirm-password" class="input-label"
+                  >Подтверждение пароля</label
+                >
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  class="login-input"
+                  placeholder="Повторите ваш пароль"
+                  maxlength="20"
+                  minlength="5"
+                  required
+                />
+                <!-- Блок для ошибок будет добавлен JS -->
+              </div>
+
+              <button type="submit" class="login-button" id="button_reg">
+                Зарегистрироваться
+              </button>
+
+              <div class="first-time">
+                <p class="first-time-text">
+                  Уже есть аккаунт?
+                  <a href="auth.html" class="register-link">Войти</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+    <script src="/web/js/validation_register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,372 @@
+* {
+  font-family: "Play-Regular";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #000000;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(206, 206, 206, 1) 82%
+  );
+}
+
+.main-content {
+  padding: 20px 0;
+}
+
+.main-content__block-one,
+.main-content__block-two,
+.main-content__block-three {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 80px 60px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.main-content__block-one {
+  margin-top: 120px;
+}
+.main-content__block-one:hover {
+  transform: scale(1.05);
+}
+.main-content__block-two:hover {
+  transform: scale(1.05);
+}
+.main-content__block-three:hover {
+  transform: scale(1.05);
+}
+
+.main-content__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(64, 64, 64, 0.7);
+  border-radius: 25px;
+}
+
+.main-content__container {
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.container__title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "Play-Regular";
+  padding: 0 40px;
+}
+
+.container__text {
+  font-size: 35px;
+  color: #ffffff;
+  margin: 20px;
+}
+
+.block-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.block-item {
+  text-align: center;
+  width: 30%;
+  min-width: 250px;
+  flex: 1;
+  padding: 0 25px;
+  transition: all 0.3s ease;
+}
+
+.item-title {
+  color: #fff;
+  font-size: 37px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.item-text {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  padding: 0 30px;
+}
+
+.container__img-logo {
+  height: 220px;
+  margin: 20px 0;
+}
+
+.flash_photo,
+.car_photo,
+.star_photo {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.small_text {
+  font-size: 35px;
+}
+.flags_photo {
+  height: 150px;
+  margin-top: 30px;
+}
+
+.fan_one {
+  color: #b0071e;
+}
+
+.color_yellow {
+  color: #fcb43f;
+}
+
+.color_blue {
+  color: #5a93f9;
+}
+
+@media (max-width: 1200px) {
+  .block-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .block-item {
+    width: 45%;
+    min-width: 300px;
+  }
+
+  .item-text {
+    font-size: 35px;
+  }
+  .main-content__block-one:hover {
+    transform: scale(1.06);
+  }
+  .main-content__block-two:hover {
+    transform: scale(1.04);
+  }
+  .main-content__block-three:hover {
+    transform: scale(1.06);
+  }
+}
+
+@media (max-width: 900px) {
+  .main-content__block-one:hover {
+    transform: scale(1.03);
+  }
+  .main-content__block-two:hover {
+    transform: scale(1.03);
+  }
+  .main-content__block-three:hover {
+    transform: scale(1.03);
+  }
+
+  .main-content__block-one,
+  .main-content__block-two,
+  .main-content__block-three {
+    width: 95%;
+    padding: 60px 40px;
+    margin: 50px auto;
+  }
+  .main-content__block-one {
+    margin-top: 100px;
+  }
+
+  .container__title {
+    font-size: 45px;
+  }
+
+  .container__text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block-item {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+
+  .main-content__block-one:hover {
+    transform: scale(1.02);
+  }
+  .main-content__block-two:hover {
+    transform: scale(1.02);
+  }
+  .main-content__block-three:hover {
+    transform: scale(1.02);
+  }
+
+  .block-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .item-title {
+    font-size: 40px;
+  }
+
+  .item-text {
+    font-size: 35px;
+    padding: 0 20px;
+  }
+
+  .small_text {
+    font-size: 32px;
+  }
+
+  .main-content__block-one {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content__block-one,
+  .main-content__block-two,
+  .main-content__block-three {
+    padding: 50px 30px;
+    margin: 30px auto;
+  }
+  .main-content__block-one {
+    margin-top: 80px;
+  }
+  .main-content__block-one:hover {
+    transform: scale(1.02);
+  }
+  .main-content__block-two:hover {
+    transform: scale(1.02);
+  }
+  .main-content__block-three:hover {
+    transform: scale(1.02);
+  }
+
+  .container__title {
+    font-size: 40px;
+    padding: 0 20px;
+  }
+
+  .container__text {
+    font-size: 34px;
+  }
+
+  .item-title {
+    font-size: 38px;
+  }
+
+  .item-text {
+    font-size: 32px;
+  }
+
+  .container__img-logo {
+    height: 200px;
+  }
+
+  .flash_photo,
+  .car_photo,
+  .star_photo {
+    height: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content__block-one:hover {
+    transform: scale(1.02);
+  }
+  .main-content__block-two:hover {
+    transform: scale(1.02);
+  }
+  .main-content__block-three:hover {
+    transform: scale(1.03);
+  }
+
+  .main-content__block-one,
+  .main-content__block-two,
+  .main-content__block-three {
+    padding: 40px 20px;
+    margin: 30px auto;
+    border-radius: 20px;
+  }
+  .main-content__block-one {
+    margin-top: 70px;
+  }
+
+  .container__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .container__text {
+    font-size: 27px;
+    margin: 15px 0;
+  }
+
+  .block-item {
+    padding: 0 15px;
+    margin-bottom: 40px;
+  }
+
+  .item-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .item-text {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+
+  .small_text {
+    font-size: 26px;
+  }
+
+  .container__img-logo {
+    height: 150px;
+  }
+
+  .flags_photo {
+    height: 120px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .container__title {
+    font-size: 32px;
+  }
+
+  .container__text {
+    font-size: 28px;
+  }
+
+  .item-title {
+    font-size: 32px;
+  }
+
+  .item-text {
+    font-size: 26px;
+  }
+}

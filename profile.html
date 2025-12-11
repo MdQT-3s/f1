@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/web/css/style.css" />
+    <link rel="stylesheet" href="/web/css/profile_style.css" />
+    <title>F1 - Профиль</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="profile.html">
+        <img src="img/logoF1.png" alt="Логотип Формулы 1" class="logo" />
+      </a>
+
+      <input type="checkbox" id="burger__toggle" class="burger__checkbox" />
+      <label for="burger__toggle" class="burger__menu">
+        <img src="img/burger.png" alt="Меню" class="burger__icon" />
+      </label>
+
+      <ul class="menu__nav">
+        <li><a href="index.html" class="menu__button">Главная</a></li>
+        <li><a href="results.html" class="menu__button">Результаты</a></li>
+        <li><a href="teams.html" class="menu__button">Команды</a></li>
+        <li><a href="about.html" class="menu__button">О нас</a></li>
+        <li><a href="auth.html" class="menu__button">Войти</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <img
+        src="/web/img/back_reg_auth.png"
+        alt="background"
+        class="background_profile"
+      />
+      <div class="main_zone">
+        <div class="left_block">
+          <div class="center_block">
+            <img
+              src="/web/img/avatar.png"
+              alt="avatar"
+              class="avatar_profile"
+            />
+            <h1 class="main_name_left">Станислав Феррари</h1>
+            <p class="country">Санкт-Петербург<br />Россия</p>
+            <div class="description_block">
+              <p class="description_text">
+                Фанат F1 с 2010 года.<br />Болею за Ferrari, но ценю талант всех
+                гонщиков
+              </p>
+            </div>
+            <div class="my_likes">
+              <div class="my_like_name">
+                <img src="/web/img/like.png" alt="like" class="like" />
+                <p class="favorite">Мои предпочтения</p>
+              </div>
+              <div class="three_block_favorite">
+                <div class="preference_block">
+                  <img
+                    src="/web/img/ferrari_team.png"
+                    alt="ferrari"
+                    class="preference_image"
+                  />
+                  <div class="preference_content">
+                    <div class="preference_title">Ferrari</div>
+                    <div class="preference_description">Любимая команда</div>
+                  </div>
+                </div>
+                <div class="preference_block">
+                  <img
+                    src="/web/img/Lecler_photo.png"
+                    alt="lecler"
+                    class="preference_image"
+                  />
+                  <div class="preference_content">
+                    <div class="preference_title">Шарль Леклер</div>
+                    <div class="preference_description">Любимый пилот</div>
+                  </div>
+                </div>
+                <div class="preference_block">
+                  <img
+                    src="/web/img/Flag_of_Monaco.png"
+                    alt="Monaco"
+                    class="preference_image"
+                  />
+                  <div class="preference_content">
+                    <div class="preference_title">Монако</div>
+                    <div class="preference_description">Любимая трасса</div>
+                  </div>
+                </div>
+              </div>
+              <a href="#editModal" class="profile_button">Редактировать</a>
+            </div>
+          </div>
+        </div>
+        <div class="right_block">
+          <div class="center_block">
+            <h2 class="main_name_right">Мои прогнозы на сезон 2025</h2>
+            <div class="blocks_forecast">
+              <div class="block_forecast">
+                <p class="text_in_block">Макс Ферстаппен</p>
+                <p class="category_in_block">Чемпион мира</p>
+              </div>
+              <div class="block_forecast">
+                <p class="text_in_block">Ландо Норрис</p>
+                <p class="category_in_block">Второе место</p>
+              </div>
+              <div class="block_forecast">
+                <p class="text_in_block">Red Bull Racing</p>
+                <p class="category_in_block">Кубок конструкторов</p>
+              </div>
+              <div class="block_forecast">
+                <p class="text_in_block">Кими Антонелли</p>
+                <p class="category_in_block">Открытие сезона</p>
+              </div>
+              <div class="block_forecast">
+                <p class="text_in_block">Шарль Леклер</p>
+                <p class="category_in_block">Лучший круговой результат</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__contacts">
+        <h3 class="contacts__title">Контакты:</h3>
+        <div class="contact__item">
+          <img src="img/Message_light.png" alt="Email" class="contact__img" />
+          <p class="contact__text">info@f1rus.com</p>
+        </div>
+        <div class="contact__item">
+          <img
+            src="img/Phone_light@2x.png"
+            alt="Phone"
+            class="contact__img contact__img--phone"
+          />
+          <p class="contact__text">+f1 921-xxx-xxxx</p>
+        </div>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li><a href="index.html" class="footer__link">Главная</a></li>
+          <li><a href="results.html" class="footer__link">Результаты</a></li>
+          <li><a href="teams.html" class="footer__link">Команды</a></li>
+          <li><a href="about.html" class="footer__link">О нас</a></li>
+          <li><a href="register.html" class="footer__link">Профиль</a></li>
+        </ul>
+      </nav>
+      <div class="footer__logo">
+        <a href="index.html">
+          <img
+            src="/web/img/logoF1.png"
+            alt="Formula 1"
+            class="footer__logo-image"
+          />
+        </a>
+      </div>
+      <div class="footer__date">
+        <span class="footer__date-text">2025</span>
+      </div>
+    </div>
+
+    <div id="editModal" class="modal">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h2 class="modal__title">Редактировать профиль</h2>
+          <a href="#" class="modal__close">&times;</a>
+        </div>
+        <div class="modal__body">
+          <form class="edit-form" action="#" method="post">
+            <div class="form__group">
+              <label for="editName" class="form__label">Имя</label>
+              <input
+                type="text"
+                id="editName"
+                name="name"
+                class="form__input"
+                placeholder="Введите ваше имя"
+                value="Станислав Феррари"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="editLocation" class="form__label">Местоположение</label>
+              <input
+                type="text"
+                id="editLocation"
+                name="location"
+                class="form__input"
+                placeholder="Город, Страна"
+                value="Санкт-Петербург, Россия"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="editAbout" class="form__label">О себе</label>
+              <textarea
+                id="editAbout"
+                name="about"
+                class="form__textarea"
+                placeholder="Расскажите о себе"
+                rows="4"
+              >Фанат F1 с 2010 года. Болею за Ferrari, но ценю талант всех гонщиков</textarea>
+            </div>
+
+            <div class="form__group">
+              <label for="editAvatar" class="form__label">Ссылка на аватар</label>
+              <input
+                type="text"
+                id="editAvatar"
+                name="avatar"
+                class="form__input"
+                placeholder="Введите URL изображения"
+                value="/web/img/avatar.png"
+              />
+            </div>
+
+            <div class="form__actions">
+              <a href="#" class="form__btn form__btn--cancel">Отмена</a>
+              <a href="#" class="form__btn form__btn--save">Сохранить</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/web/css/style.css" />
+    <link rel="stylesheet" href="/web/css/teams_style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Команды - F1</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="profile.html">
+        <img src="img/logoF1.png" alt="Логотип Формулы 1" class="logo" />
+      </a>
+
+      <input type="checkbox" id="burger__toggle" class="burger__checkbox" />
+      <label for="burger__toggle" class="burger__menu">
+        <img src="img/burger.png" alt="Меню" class="burger__icon" />
+      </label>
+
+      <ul class="menu__nav">
+        <li><a href="index.html" class="menu__button">Главная</a></li>
+        <li><a href="results.html" class="menu__button">Результаты</a></li>
+        <li><a href="teams.html" class="menu__button">Команды</a></li>
+        <li><a href="about.html" class="menu__button">О нас</a></li>
+        <li><a href="auth.html" class="menu__button">Войти</a></li>
+      </ul>
+    </nav>
+
+    <div
+      id="teamsCarousel"
+      class="carousel slide teams-carousel"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#teamsCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#teamsCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#teamsCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#teamsCarousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#teamsCarousel"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="team">
+            <div class="team__header">
+              <h1 class="team__title">Mercedes-AMG Petronas F1 Team</h1>
+              <p class="team__subtitle">Самое лучшее, или ничего</p>
+            </div>
+
+            <div class="team__info">
+              <div class="team__logo-container">
+                <img
+                  src="/web/img/teams_img/merc_logo.png"
+                  alt="мерседес"
+                  class="team__logo"
+                />
+              </div>
+              <div class="team__description team__description--merc">
+                <p class="team__description-text">
+                  Самый успешный конструктор эпохи гибридных двигателей.
+                  Команда-легенда, доминировавшая в Формуле 1 на протяжении
+                  целой эпохи. Известна своими технологическими инновациями.
+                </p>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#63</div>
+                  <h2 class="driver-card__name">Джордж<br />Расселл</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/rus.png"
+                      alt="Джордж Расселл"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    15.02.1998 Великобритания<br />Лучшее достижение:<br />
+                    4-е место (2022)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#12</div>
+                  <h2 class="driver-card__name">Андреа Кими<br />Антонелли</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/kimi.png"
+                      alt="Кими Антонелли"
+                      class="driver-card__image driver-card__image--kimi"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    25.08.2006 Италия<br />Дебютант<br />чемпионата
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="team team--mclaren">
+            <div class="team__header">
+              <h1 class="team__title">McLaren Formula 1 Team</h1>
+              <p class="team__subtitle">Мы гонимся, чтобы побеждать</p>
+            </div>
+
+            <div class="team__info">
+              <div class="team__logo-container">
+                <img
+                  src="/web/img/teams_img/mclaren.png"
+                  alt="макларен"
+                  class="team__logo"
+                />
+              </div>
+
+              <div class="team__description">
+                <p class="team__description-text">
+                  Легендарная команда Формулы-1 с богатейшей историей побед.
+                  Известна своими инновациями и яркой оранжевой ливреей.<br />Является
+                  одним из лидеров пелотона, стабильно борющимся за победы и
+                  подиумы.
+                </p>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card driver-card--orange">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#4</div>
+                  <h2 class="driver-card__name">Ландо<br />Норрис</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/norris.png"
+                      alt="Ландо Норрис"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    13.11.1999 Великобритания<br />Лучшее достижение:<br />2-е
+                    место (2024)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card driver-card--orange">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#81</div>
+                  <h2 class="driver-card__name">Оскар<br />Пиастри</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/piastri.png"
+                      alt="Оскар Пиастри"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    06.04.2001 Австралия<br />Лучшее достижение:<br />4-е место
+                    (2024)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="team team--rb-small">
+            <div class="team__header">
+              <h1 class="team__title">visa cash app rb f1 team</h1>
+              <p class="team__subtitle">Навстречу будущему</p>
+            </div>
+            <div class="team__info">
+              <div class="team__logo-container">
+                <img
+                  src="/web/img/teams_img/rb_small_logo.png"
+                  alt="RB_smal"
+                  class="team__logo"
+                />
+              </div>
+
+              <div class="team__description">
+                <p class="team__description-text">
+                  Молодая и дерзкая команда,рожденная для открытия новых
+                  талантов.Является официальной junior-командой Red
+                  Bull.Знаменита смелыми стратегиями и агрессивным стилем гонок.
+                </p>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#30</div>
+                  <h2 class="driver-card__name">Лиам<br />лоусон</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/lowson.png"
+                      alt="лиам лоусон"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    12.02.2002 Новая Зеландия<br />Лучшее достижение:<br />5-е
+                    место (2023)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#6</div>
+                  <h2 class="driver-card__name">Айзек<br />ханджар</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/hadjar.png"
+                      alt="Айзек Ханджар"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    28.09.2004 Франция<br />Лучшее достижение: Дебютант чемпионата
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="team team--redbull">
+            <div class="team__header">
+              <h1 class="team__title">ORACLE RED BULL RACING</h1>
+              <p class="team__subtitle">Red Bull окрыляет</p>
+            </div>
+
+            <div class="team__info">
+              <div class="team__logo-container">
+                <img
+                  src="/web/img/teams_img/rb_logo.png"
+                  alt="RB"
+                  class="team__logo"
+                />
+              </div>
+
+              <div class="team__description">
+                <p class="team__description-text">
+                  Доминирующая сила современной Формулы 1. Команда, которая
+                  задает стандарты скорости, инноваций и победного мышления. С
+                  момента основания демонстрирует агрессивный подход к гонкам.
+                </p>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#1</div>
+                  <h2 class="driver-card__name">Макс Ферстаппен</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/max_photo.png"
+                      alt="макс Ферстаппен"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    30.09.1997 Бельгия<br />Чемпион мира 2021,2022,2023 и 2024
+                    года
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#22</div>
+                  <h2 class="driver-card__name">Юки<br />Цунода</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/yuki_photo.png"
+                      alt="Юки Цунода"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    11.05.2000 Япония<br />Лучшее достижение:<br />12-е место
+                    (2024)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="team team--ferrari">
+            <div class="team__header">
+              <h1 class="team__title">SCUDERIA FERRARI</h1>
+              <p class="team__subtitle">Ferrari - это страсть</p>
+            </div>
+
+            <div class="team__info">
+              <div class="team__logo-container">
+                <img
+                  src="/web/img/teams_img/ferrari_logo.png"
+                  alt="Феррари"
+                  class="team__logo"
+                />
+              </div>
+
+              <div class="team__description">
+                <p class="team__description-text">
+                  Самая легендарная команда в истории Формулы 1. Символ итальянского гоночного духа и страсти к скорости. Обладает самой преданной армией болельщиков по всему миру.
+                </p>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#16</div>
+                  <h2 class="driver-card__name">Чарльз<br />Леклер</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/leclerc.png"
+                      alt="Чарльз Леклер"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    16.10.1997 Монако<br />Лучшее достижение:<br />2-е место (2022)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="team__drivers-container">
+              <div class="driver-card">
+                <div class="driver-card__content">
+                  <div class="driver-card__number">#44</div>
+                  <h2 class="driver-card__name">Льюис<br />Хэмилтон</h2>
+                  <div class="driver-card__image-container">
+                    <img
+                      src="/web/img/teams_img/hamilton.png"
+                      alt="Льюис Хэмилтон"
+                      class="driver-card__image"
+                    />
+                  </div>
+                  <p class="driver-card__info">
+                    07.01.1985 Великобритания<br />чемпион мира<br />2008, 2014-2020
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#teamsCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#teamsCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+
+    <div class="footer">
+      <img src="img/footer.png" alt="footer" class="footer__image" />
+      <div class="footer__contacts">
+        <h3 class="contacts__title">Контакты:</h3>
+        <div class="contact__item">
+          <img src="img/Message_light.png" alt="Email" class="contact__img" />
+          <p class="contact__text">info@f1rus.com</p>
+        </div>
+        <div class="contact__item">
+          <img
+            src="img/Phone_light@2x.png"
+            alt="Phone"
+            class="contact__img contact__img--phone"
+          />
+          <p class="contact__text">+f1 921-xxx-xxxx</p>
+        </div>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li><a href="index.html" class="footer__link">Главная</a></li>
+          <li><a href="results.html" class="footer__link">Результаты</a></li>
+          <li><a href="teams.html" class="footer__link">Команды</a></li>
+          <li><a href="about.html" class="footer__link">О нас</a></li>
+          <li><a href="register.html" class="footer__link">Профиль</a></li>
+        </ul>
+      </nav>
+      <div class="footer__logo">
+        <a href="index.html">
+          <img
+            src="/web/img/logoF1.png"
+            alt="Formula 1"
+            class="footer__logo-image"
+          />
+        </a>
+      </div>
+      <div class="footer__date">
+        <p class="footer__date-text">2025</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
