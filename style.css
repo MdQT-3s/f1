@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 @font-face {
   font-family: "Play-Regular";
   src:
@@ -17,8 +18,11 @@
 
 @font-face {
   font-family: "Racing-sans";
-  src: url('/fonts/RacingSansOne-Regular.woff') format('woff');
+  src: local('Racing Sans One'), local('RacingSansOne-Regular');
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 .container {
   max-width: 1600px;
